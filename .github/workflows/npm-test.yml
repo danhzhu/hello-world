@@ -12,7 +12,7 @@ jobs:
 
       matrix:
 
-        node_version: [12.x]
+        node_version: [16.x]
 
     steps:
 
@@ -30,4 +30,4 @@ jobs:
 
       - run: npm run build --if-present
 
-      - run: npm test
+      - run: npx mocha test/test.js
